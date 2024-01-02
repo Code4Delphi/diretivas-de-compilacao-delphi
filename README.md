@@ -36,6 +36,8 @@ Abaixo descrevemos diversos exemplo de uso de diretivas, e no projeto você enco
 <br/>
 
 ## Conteúdo
+- [DEFINIR/INDEFINIR DIRETIVAS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#definirindefinir)
+- [CONDIÇÕES IF, ELSEIF E ELSE](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#condi%C3%A7%C3%B5es-if-elseif-e-else)
 - [CONSTANTES](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#constantes)
 - [MESSAGES](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#messages)
 - [SISTEMAS OPERACIONAIS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#sistemas-operacionais)
