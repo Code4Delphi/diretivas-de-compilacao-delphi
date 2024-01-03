@@ -438,7 +438,7 @@ Exemplos:
 > {$ENDIF}
 > ```
 
-## LINKS ÚTEIS
+## 🔗 LINKS ÚTEIS
 - [Diretivas de compilação Delphi](https://docwiki.embarcadero.com/RADStudio/Athens/en/Delphi_compiler_directives)
 - [Lista de diretivas de compilação](https://docwiki.embarcadero.com/RADStudio/Athens/en/Delphi_Compiler_Directives_(List)_Index)
 - [Conditional compilation](https://docwiki.embarcadero.com/RADStudio/Athens/en/Conditional_compilation_(Delphi))
@@ -455,6 +455,5 @@ To submit a pull request, follow these steps:
 5. Push the branch (`git push origin Message about functionality or adjustment`)
 6. Open a pull request
 
-[Voltar para o Topo](#diretivas-de-compila%C3%A7%C3%A3o-no-delphi)
 
-[Voltar para o Sumário](#sum%C3%A1rio)
+[Voltar para o Topo](#diretivas-de-compila%C3%A7%C3%A3o-no-delphi) &nbsp;&nbsp; &nbsp;&nbsp;  [Voltar para o Sumário](#sum%C3%A1rio)
