@@ -54,6 +54,7 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 - [WARNING MESSAGES](#warning-messages)
 - [REGION](#region)
 - [ARQUIVOS .inc](#arquivos-inc)
+- [USANDO O IDE](#usando-o-ide)
 - [LINKS ÚTEIS](#links-%C3%BAteis)
 - [CONTRIBUTIONS / IDEAS / BUG FIXES](#contributions--ideas--bug-fixes)
 
