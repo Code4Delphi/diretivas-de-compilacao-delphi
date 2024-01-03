@@ -1,4 +1,4 @@
-# Exemplos de uso de diretivas de compilação no Delphi
+# Diretivas de compilação no **Delphi**
 
 <p align="center">
   <a href="https://github.com/Code4Delphi/Code4D-Wizard/blob/master/Images/C4D-Logo.png">
