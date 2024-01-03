@@ -8,7 +8,7 @@
 
 Nesse diretório você encontrara vários exemplos do uso de diretivas de compilação com o **Delphi**.
 
-Abaixo descrevemos diversos exemplo de uso de diretivas, e no projeto você encontrara exemplos completos de uso das diretivas.
+Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exemplos completos e práticos de uso das diretivas.
 
 
 
