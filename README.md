@@ -1,4 +1,4 @@
-# Selecionar idioma
+### Alterar idioma
 [![Static Badge](https://img.shields.io/badge/Portugu%C3%AAs-(ptBR)-green)](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi)
 [![Static Badge](https://img.shields.io/badge/English-(en)-red)](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/blob/master/README.en.md)
 
@@ -17,7 +17,7 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 
 
 
-## 📞 Contacts
+## 📞 Contatos
 
 <p align="left">
   <a href="https://t.me/Code4Delphi" target="_blank">
