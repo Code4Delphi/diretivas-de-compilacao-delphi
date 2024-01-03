@@ -33,7 +33,6 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 > [!IMPORTANT]
 > ## ⭐ Não deixe de deixar sua estrela para ajudar a propagar o diretório.
 
-<br/>
 
 ## Sumário 
 - [DEFINIR/INDEFINIR DIRETIVAS](#definirindefinir)
