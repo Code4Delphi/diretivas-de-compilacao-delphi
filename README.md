@@ -444,6 +444,14 @@ Exemplos:
 > {$ENDIF}
 > ```
 
+
+## USANDO O IDE
+* Você pode definir muitas das diretivas do compilador na caixa de diálogo da IDE em **Project > Options > Delphi Compiler > Conditional defines**. Essas diretivas afetam todas as unidades sempre que seu código-fonte é recompilado.
+
+* Se você estiver trabalhando no Editor de Código e quiser uma maneira rápida de ver as diretivas do compilador em vigor, pressione <kbd>**Ctrl + O + O**</kbd>. As configurações atuais das diretivas são inseridas em uma linha horizontal no topo do seu arquivo, junto com outras configurações atuais, como avisos do compilador (as configurações da diretiva $WARN). Essas listas são adicionadas ao início do seu arquivo de origem, a menos que você desfaça (<kbd>__Ctrl + Z__</kbd>) ou exclua manualmente a lista:
+![image](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/assets/33873267/d077a6e6-4135-426b-bf6b-7f22ef272026)
+
+
 ## 🔗LINKS ÚTEIS
 - [Diretivas de compilação Delphi](https://docwiki.embarcadero.com/RADStudio/Athens/en/Delphi_compiler_directives)
 - [Lista de diretivas de compilação](https://docwiki.embarcadero.com/RADStudio/Athens/en/Delphi_Compiler_Directives_(List)_Index)
