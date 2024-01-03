@@ -14,11 +14,11 @@ object ViewMain: TViewMain
   Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
-  object mmLog: TMemo
+  object Memo1: TMemo
     Left = 0
-    Top = 121
+    Top = 141
     Width = 934
-    Height = 358
+    Height = 338
     TabStop = False
     Align = alClient
     BevelInner = bvNone
@@ -33,309 +33,8 @@ object ViewMain: TViewMain
     ReadOnly = True
     ScrollBars = ssVertical
     TabOrder = 0
-    ExplicitLeft = 8
-  end
-  object Panel9: TPanel
-    Left = 0
-    Top = 0
-    Width = 934
-    Height = 121
-    Align = alTop
-    Padding.Left = 3
-    Padding.Top = 3
-    Padding.Right = 3
-    Padding.Bottom = 3
-    ParentBackground = False
-    TabOrder = 1
-    object Panel1: TPanel
-      Left = 4
-      Top = 4
-      Width = 139
-      Height = 113
-      Align = alLeft
-      BevelOuter = bvNone
-      TabOrder = 0
-      ExplicitHeight = 121
-      object edtValor: TEdit
-        Left = 6
-        Top = 4
-        Width = 120
-        Height = 21
-        MaxLength = 3
-        NumbersOnly = True
-        TabOrder = 0
-        Text = '459'
-      end
-      object btnNumeroPorExtenso: TButton
-        Left = 6
-        Top = 31
-        Width = 120
-        Height = 25
-        Cursor = crHandPoint
-        Caption = 'N'#250'mero por extenso'
-        TabOrder = 1
-        OnClick = btnNumeroPorExtensoClick
-      end
-    end
-    object Panel2: TPanel
-      Left = 143
-      Top = 4
-      Width = 787
-      Height = 113
-      Align = alClient
-      BevelOuter = bvNone
-      ParentBackground = False
-      TabOrder = 1
-      ExplicitHeight = 121
-      object Panel3: TPanel
-        Left = 0
-        Top = 0
-        Width = 787
-        Height = 27
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 0
-        ExplicitLeft = 6
-        ExplicitTop = -6
-        object btnIFeELSE: TButton
-          Left = 0
-          Top = 0
-          Width = 127
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'IF e ELSE'
-          TabOrder = 0
-          OnClick = btnIFeELSEClick
-        end
-        object btnIFeELSEIFeELSE: TButton
-          Left = 127
-          Top = 0
-          Width = 138
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'IF, ELSEIF e ELSE'
-          TabOrder = 1
-          OnClick = btnIFeELSEIFeELSEClick
-        end
-        object btnComContantes: TButton
-          Left = 265
-          Top = 0
-          Width = 141
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Com constantes'
-          TabOrder = 2
-          OnClick = btnComContantesClick
-        end
-        object btnComContantesInteger: TButton
-          Left = 406
-          Top = 0
-          Width = 156
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Com constante Integer'
-          TabOrder = 3
-          OnClick = btnComContantesIntegerClick
-        end
-        object btnMessages: TButton
-          Left = 562
-          Top = 0
-          Width = 156
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Messages'
-          TabOrder = 4
-          OnClick = btnMessagesClick
-        end
-      end
-      object Panel4: TPanel
-        Left = 0
-        Top = 54
-        Width = 787
-        Height = 27
-        Align = alTop
-        BevelOuter = bvNone
-        TabOrder = 2
-        ExplicitTop = 27
-        object btnAlterarValorConstantes: TButton
-          Left = 0
-          Top = 0
-          Width = 127
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Alterar valor constante'
-          TabOrder = 0
-          OnClick = btnAlterarValorConstantesClick
-          ExplicitLeft = -6
-          ExplicitTop = -6
-        end
-        object btnAlterarValorConstantes2: TButton
-          Left = 127
-          Top = 0
-          Width = 138
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Alterar valor constante 2'
-          TabOrder = 1
-          OnClick = btnAlterarValorConstantes2Click
-        end
-        object btnVersaoDelphiVERXX: TButton
-          Left = 265
-          Top = 0
-          Width = 141
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Vers'#227'o delphi (VERXX)'
-          TabOrder = 2
-          OnClick = btnVersaoDelphiVERXXClick
-        end
-        object btnVersaoDelphiRTLVersion: TButton
-          Left = 562
-          Top = 0
-          Width = 156
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Vers'#227'o delphi RTLVersion'
-          TabOrder = 4
-          OnClick = btnVersaoDelphiRTLVersionClick
-        end
-        object btnVersaoDelphiCompilerVersion: TButton
-          Left = 406
-          Top = 0
-          Width = 156
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Vers'#227'o delphi CompilerVersion'
-          TabOrder = 3
-          OnClick = btnVersaoDelphiCompilerVersionClick
-        end
-      end
-      object Panel5: TPanel
-        Left = 0
-        Top = 81
-        Width = 787
-        Height = 27
-        Align = alTop
-        BevelOuter = bvNone
-        ParentBackground = False
-        TabOrder = 3
-        ExplicitTop = 54
-        object btnDefine: TButton
-          Left = 0
-          Top = 0
-          Width = 127
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Criar/definir diretiva'
-          TabOrder = 0
-          OnClick = btnDefineClick
-        end
-        object btnUNDef: TButton
-          Left = 127
-          Top = 0
-          Width = 138
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Desativar/indefinir diretiva'
-          TabOrder = 1
-          OnClick = btnUNDefClick
-        end
-        object btnHabilitarDesabilitarHints: TButton
-          Left = 265
-          Top = 0
-          Width = 141
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Habilitar/desabilitar Hints'
-          TabOrder = 2
-          OnClick = btnHabilitarDesabilitarHintsClick
-        end
-        object btnHabilitarDesabilitarWarnings: TButton
-          Left = 406
-          Top = 0
-          Width = 156
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Habilitar/desabilitar Warnings'
-          TabOrder = 3
-          OnClick = btnHabilitarDesabilitarWarningsClick
-          ExplicitLeft = 402
-        end
-        object Button1: TButton
-          Left = 562
-          Top = 0
-          Width = 156
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Warning messages'
-          TabOrder = 4
-          OnClick = Button1Click
-          ExplicitLeft = 558
-        end
-      end
-      object Panel8: TPanel
-        Left = 0
-        Top = 27
-        Width = 787
-        Height = 27
-        Align = alTop
-        BevelOuter = bvNone
-        ParentBackground = False
-        TabOrder = 1
-        ExplicitLeft = 6
-        ExplicitTop = 21
-        object btnSO: TButton
-          Left = 0
-          Top = 0
-          Width = 127
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Sistema operacional'
-          TabOrder = 0
-          OnClick = btnSOClick
-          ExplicitLeft = -6
-          ExplicitTop = -6
-        end
-        object btnPlataformas: TButton
-          Left = 127
-          Top = 0
-          Width = 138
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Plataformas'
-          TabOrder = 1
-          OnClick = btnPlataformasClick
-        end
-        object btnVclOuFmx: TButton
-          Left = 265
-          Top = 0
-          Width = 141
-          Height = 27
-          Cursor = crHandPoint
-          Align = alLeft
-          Caption = 'Framework (VCL ou FMX)'
-          TabOrder = 2
-          OnClick = btnVclOuFmxClick
-        end
-      end
-    end
+    ExplicitTop = 121
+    ExplicitHeight = 358
   end
   object Panel6: TPanel
     Left = 0
@@ -349,7 +48,7 @@ object ViewMain: TViewMain
     Padding.Right = 3
     Padding.Bottom = 3
     ParentBackground = False
-    TabOrder = 2
+    TabOrder = 1
     DesignSize = (
       934
       127)
@@ -372,7 +71,6 @@ object ViewMain: TViewMain
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitHeight = 272
       object GroupBox1: TGroupBox
         Left = 115
         Top = 0
@@ -387,10 +85,6 @@ object ViewMain: TViewMain
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
-        ExplicitLeft = 343
-        ExplicitTop = 3
-        ExplicitWidth = 208
-        ExplicitHeight = 272
         object pnBackLinks01: TPanel
           Left = 2
           Top = 15
@@ -401,8 +95,6 @@ object ViewMain: TViewMain
           Padding.Left = 5
           Padding.Top = 3
           TabOrder = 0
-          ExplicitLeft = -24
-          ExplicitHeight = 255
           object Label1: TLabel
             Left = 5
             Top = 63
@@ -541,10 +233,6 @@ object ViewMain: TViewMain
           BevelOuter = bvNone
           ParentBackground = False
           TabOrder = 1
-          ExplicitLeft = 319
-          ExplicitTop = 3
-          ExplicitWidth = 233
-          ExplicitHeight = 272
           object lbYoutube: TLabel
             Left = 0
             Top = 0
@@ -922,6 +610,292 @@ object ViewMain: TViewMain
           ExplicitTop = -5
           ExplicitWidth = 101
         end
+      end
+    end
+  end
+  object pnTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 934
+    Height = 141
+    Align = alTop
+    BevelEdges = [beBottom]
+    BevelKind = bkTile
+    BevelOuter = bvNone
+    ParentBackground = False
+    TabOrder = 2
+    object Panel3: TPanel
+      Left = 0
+      Top = 27
+      Width = 934
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      ExplicitWidth = 926
+      object btnIFeELSE: TButton
+        Left = 0
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'IF e ELSE'
+        TabOrder = 0
+        OnClick = btnIFeELSEClick
+      end
+      object btnIFeELSEIFeELSE: TButton
+        Left = 165
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'IF, ELSEIF e ELSE'
+        TabOrder = 1
+        OnClick = btnIFeELSEIFeELSEClick
+      end
+      object btnComContantes: TButton
+        Left = 330
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Com constantes'
+        TabOrder = 2
+        OnClick = btnComContantesClick
+      end
+      object btnComContantesInteger: TButton
+        Left = 495
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Com constante Integer'
+        TabOrder = 3
+        OnClick = btnComContantesIntegerClick
+      end
+      object btnMessages: TButton
+        Left = 660
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Messages'
+        TabOrder = 4
+        OnClick = btnMessagesClick
+        ExplicitLeft = 655
+      end
+    end
+    object Panel4: TPanel
+      Left = 0
+      Top = 81
+      Width = 934
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 2
+      ExplicitWidth = 926
+      object btnAlterarValorConstantes: TButton
+        Left = 0
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Alterar valor de constante'
+        TabOrder = 0
+        OnClick = btnAlterarValorConstantesClick
+      end
+      object btnAoDefinirValorDeConstantes: TButton
+        Left = 165
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Ao definir um valor de constante'
+        TabOrder = 1
+        OnClick = btnAoDefinirValorDeConstantesClick
+        ExplicitLeft = 160
+      end
+      object btnVersaoDelphiVERXX: TButton
+        Left = 330
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Vers'#227'o Delphi (VERXX)'
+        TabOrder = 2
+        OnClick = btnVersaoDelphiVERXXClick
+      end
+      object btnVersaoDelphiRTLVersion: TButton
+        Left = 660
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Vers'#227'o Delphi (RTLVersion)'
+        TabOrder = 4
+        OnClick = btnVersaoDelphiRTLVersionClick
+      end
+      object btnVersaoDelphiCompilerVersion: TButton
+        Left = 495
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Vers'#227'o Delphi (CompilerVersion)'
+        TabOrder = 3
+        OnClick = btnVersaoDelphiCompilerVersionClick
+        ExplicitLeft = 489
+        ExplicitTop = -6
+      end
+    end
+    object Panel5: TPanel
+      Left = 0
+      Top = 0
+      Width = 934
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      ParentBackground = False
+      TabOrder = 3
+      ExplicitWidth = 926
+      object btnDefine: TButton
+        Left = 0
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Criar/definir diretiva'
+        TabOrder = 0
+        OnClick = btnDefineClick
+      end
+      object btnUNDef: TButton
+        Left = 165
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Desativar/indefinir diretiva'
+        TabOrder = 1
+        OnClick = btnUNDefClick
+      end
+      object btnHabilitarDesabilitarHints: TButton
+        Left = 330
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Habilitar/desabilitar Hints'
+        TabOrder = 2
+        OnClick = btnHabilitarDesabilitarHintsClick
+      end
+      object btnHabilitarDesabilitarWarnings: TButton
+        Left = 495
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Habilitar/desabilitar Warnings'
+        TabOrder = 3
+        OnClick = btnHabilitarDesabilitarWarningsClick
+      end
+      object Button1: TButton
+        Left = 660
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Warning messages'
+        TabOrder = 4
+        OnClick = Button1Click
+        ExplicitLeft = 655
+      end
+    end
+    object Panel8: TPanel
+      Left = 0
+      Top = 54
+      Width = 934
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      ParentBackground = False
+      TabOrder = 1
+      ExplicitTop = 48
+      object btnSO: TButton
+        Left = 0
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Sistema operacional'
+        TabOrder = 0
+        OnClick = btnSOClick
+      end
+      object btnPlataformas: TButton
+        Left = 165
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Plataformas'
+        TabOrder = 1
+        OnClick = btnPlataformasClick
+      end
+      object btnVclOuFmx: TButton
+        Left = 330
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Framework (VCL ou FMX)'
+        TabOrder = 2
+        OnClick = btnVclOuFmxClick
+      end
+    end
+    object Panel1: TPanel
+      Left = 0
+      Top = 108
+      Width = 934
+      Height = 27
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 4
+      object edtValor: TEdit
+        Left = 0
+        Top = 4
+        Width = 165
+        Height = 21
+        MaxLength = 3
+        NumbersOnly = True
+        TabOrder = 0
+        Text = '459'
+      end
+      object btnNumeroPorExtenso: TButton
+        Left = 165
+        Top = 2
+        Width = 165
+        Height = 25
+        Cursor = crHandPoint
+        Caption = 'N'#250'mero por extenso'
+        TabOrder = 1
+        OnClick = btnNumeroPorExtensoClick
       end
     end
   end

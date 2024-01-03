@@ -1,8 +1,9 @@
 unit View.Main;
 
-//INCLUI UM ARQUIVO .inc ONDE PODEm SER INSERIDAS DIVERSAS DIRETIVAS DE COMPILACAO
+//INCLUI UM ARQUIVO .inc ONDE PODEM SER INSERIDAS DIVERSAS DIRETIVAS DE COMPILACAO
 //{$I arquivo.inc} OU {$INCLUDE arquivo.inc};
 {$I C4D.inc}
+{$INCLUDE Includes\arquivo_inc_teste.inc}
 
 //"DEFINE" CRIA/DEFINI UMA DIRETIVA COM NOME "ACBR_C4D"
 {$DEFINE ACBR_C4D}
@@ -43,37 +44,10 @@ type
   {$SCOPEDENUMS OFF}
 
   TViewMain = class(TForm)
-    mmLog: TMemo;
-    Panel9: TPanel;
-    Panel1: TPanel;
-    edtValor: TEdit;
-    btnNumeroPorExtenso: TButton;
-    Panel2: TPanel;
-    Panel3: TPanel;
-    btnIFeELSE: TButton;
-    btnIFeELSEIFeELSE: TButton;
-    btnComContantes: TButton;
-    btnComContantesInteger: TButton;
-    Panel4: TPanel;
-    btnAlterarValorConstantes: TButton;
-    btnAlterarValorConstantes2: TButton;
-    btnVersaoDelphiVERXX: TButton;
-    Panel5: TPanel;
-    btnVersaoDelphiRTLVersion: TButton;
-    btnMessages: TButton;
-    btnVersaoDelphiCompilerVersion: TButton;
+    Memo1: TMemo;
     Panel6: TPanel;
     btnLimparLog: TButton;
     pnBackLogoELinks: TPanel;
-    btnDefine: TButton;
-    btnUNDef: TButton;
-    btnHabilitarDesabilitarHints: TButton;
-    btnHabilitarDesabilitarWarnings: TButton;
-    Button1: TButton;
-    Panel8: TPanel;
-    btnSO: TButton;
-    btnPlataformas: TButton;
-    btnVclOuFmx: TButton;
     GroupBox1: TGroupBox;
     pnBackLinks01: TPanel;
     Label1: TLabel;
@@ -87,6 +61,32 @@ type
     lbGitHub: TLabel;
     pnBackLogo: TPanel;
     Image1: TImage;
+    pnTop: TPanel;
+    Panel3: TPanel;
+    btnIFeELSE: TButton;
+    btnIFeELSEIFeELSE: TButton;
+    btnComContantes: TButton;
+    btnComContantesInteger: TButton;
+    btnMessages: TButton;
+    Panel4: TPanel;
+    btnAlterarValorConstantes: TButton;
+    btnAoDefinirValorDeConstantes: TButton;
+    btnVersaoDelphiVERXX: TButton;
+    btnVersaoDelphiRTLVersion: TButton;
+    btnVersaoDelphiCompilerVersion: TButton;
+    Panel5: TPanel;
+    btnDefine: TButton;
+    btnUNDef: TButton;
+    btnHabilitarDesabilitarHints: TButton;
+    btnHabilitarDesabilitarWarnings: TButton;
+    Button1: TButton;
+    Panel8: TPanel;
+    btnSO: TButton;
+    btnPlataformas: TButton;
+    btnVclOuFmx: TButton;
+    Panel1: TPanel;
+    edtValor: TEdit;
+    btnNumeroPorExtenso: TButton;
     procedure btnNumeroPorExtensoClick(Sender: TObject);
     procedure btnIFeELSEClick(Sender: TObject);
     procedure btnIFeELSEIFeELSEClick(Sender: TObject);
@@ -94,7 +94,7 @@ type
     procedure btnComContantesIntegerClick(Sender: TObject);
     procedure btnMessagesClick(Sender: TObject);
     procedure btnAlterarValorConstantesClick(Sender: TObject);
-    procedure btnAlterarValorConstantes2Click(Sender: TObject);
+    procedure btnAoDefinirValorDeConstantesClick(Sender: TObject);
     procedure btnVersaoDelphiVERXXClick(Sender: TObject);
     procedure btnVersaoDelphiCompilerVersionClick(Sender: TObject);
     procedure btnVersaoDelphiRTLVersionClick(Sender: TObject);
@@ -123,6 +123,14 @@ implementation
 
 {$R *.dfm}
 
+//CONTROLA A EXIBICAO DE REGIOES RECOLHIVEIS
+{$REGION 'Minha região'}
+procedure ExibirMsgTeste;
+begin
+  ShowMessage('Minha mensagem de teste');
+end;
+{$ENDREGION}
+
 {$IFDEF ACBR_C4D}
 
 function TViewMain.NumeroExtensoACBr(AValor: Double): string;
@@ -141,7 +149,6 @@ begin
 end;
 {$ENDIF}
 
-
 procedure TViewMain.btnNumeroPorExtensoClick(Sender: TObject);
 var
   LValor: Integer;
@@ -149,36 +156,41 @@ begin
   LValor := StrToIntDef(edtValor.Text, 0);
 
   {$IFDEF ACBR_C4D}
-    mmLog.Lines.Add('Do ACBr: ' + NumeroExtensoACBr(LValor));
+    Memo1.Lines.Add('Do ACBr: ' + NumeroExtensoACBr(LValor));
   {$ELSE}
-    mmLog.Lines.Add('Da função: ' + NumeroExtensoFuncao(LValor));
+    Memo1.Lines.Add('Da função: ' + NumeroExtensoFuncao(LValor));
   {$ENDIF}
 end;
 
 procedure TViewMain.btnLimparLogClick(Sender: TObject);
 begin
-  mmLog.Lines.Clear;
+  Memo1.Lines.Clear;
 end;
-
-//CONTROLA A EXIBICAO DE REGIOES RECOLHIVEIS
-{$REGION 'Minha região'}
-//MEU CODIGO
-//DESSA
-//REGIAO
-//TESTE
-{$ENDREGION}
-
 
 procedure TViewMain.btnDefineClick(Sender: TObject);
 begin
   //CRIAR/DEFINIR UMA DIRETIVA
-  {$DEFINE NOME_DIRETIVA_TESTE}
+  {$DEFINE NAME_DIRECTIVE_TEST_01}
+
+  //TESTAR SE A DIRETIVA ESTA DEFINIDA
+  {$IFDEF NAME_DIRECTIVE_TEST_01}
+    Memo1.Lines.Add('Diretiva NAME_DIRECTIVE_TEST_01 está definida');
+  {$ELSE}
+    Memo1.Lines.Add('Diretiva NAME_DIRECTIVE_TEST_01 NÃO está definida');
+  {$ENDIF}
 end;
 
 procedure TViewMain.btnUNDefClick(Sender: TObject);
 begin
   //DESATIVAR/INDEFINIR UMA DIRETIVA
-  {$UNDEF NOME_DIRETIVA_TESTE}
+  {$UNDEF NAME_DIRECTIVE_TEST_02}
+
+  //TESTAR SE A DIRETIVA ESTA DEFINIDA
+  {$IFDEF NAME_DIRECTIVE_TEST_02}
+    Memo1.Lines.Add('Diretiva NAME_DIRECTIVE_TEST_02 está definida');
+  {$ELSE}
+    Memo1.Lines.Add('Diretiva NAME_DIRECTIVE_TEST_02 NÃO está definida');
+  {$ENDIF}
 end;
 
 procedure TViewMain.btnHabilitarDesabilitarHintsClick(Sender: TObject);
@@ -228,22 +240,23 @@ begin
   //LISTA COMPLETA: https://docwiki.embarcadero.com/RADStudio/Athens/en/Warning_messages_(Delphi)
 end;
 
+
 procedure TViewMain.btnIFeELSEClick(Sender: TObject);
 begin
   //CRIAR/DEFINIR A DIRETIVA "MINHA_DIRETIVA"
   {$DEFINE MINHA_DIRETIVA}
   {$IFDEF MINHA_DIRETIVA}
-    mmLog.Lines.Add('Diretiva MINHA_DIRETIVA setada como TRUE');
+    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA setada como TRUE');
   {$ELSE}
-    mmLog.Lines.Add('Diretiva MINHA_DIRETIVA setada como FALSE');
+    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA setada como FALSE');
   {$ENDIF}
 
   //DESATIVAR/INDEFINIR A DIRETIVA "MINHA_DIRETIVA"
   {$UNDEF MINHA_DIRETIVA}
   {$IFDEF MINHA_DIRETIVA}
-    mmLog.Lines.Add('Diretiva MINHA_DIRETIVA setada como TRUE');
+    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA setada como TRUE');
   {$ELSE}
-    mmLog.Lines.Add('Diretiva MINHA_DIRETIVA setada como FALSE');
+    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA setada como FALSE');
   {$ENDIF}
 end;
 
@@ -251,13 +264,13 @@ procedure TViewMain.btnIFeELSEIFeELSEClick(Sender: TObject);
 begin
   {$DEFINE VALOR_02}
   {$IFDEF VALOR_01}
-    mmLog.Lines.Add('Diretiva VALOR_01 setada como TRUE');
+    Memo1.Lines.Add('Diretiva VALOR_01 setada como TRUE');
   {$ELSEIF DEFINED(VALOR_02)}
-    mmLog.Lines.Add('Diretiva VALOR_02 setada como TRUE');
+    Memo1.Lines.Add('Diretiva VALOR_02 setada como TRUE');
   {$ELSEIF DEFINED(VALOR_03)}
-    mmLog.Lines.Add('Diretiva VALOR_03 setada como TRUE');
+    Memo1.Lines.Add('Diretiva VALOR_03 setada como TRUE');
   {$ELSE}
-    mmLog.Lines.Add('Diretiva VALOR_01, VALOR_02 E VALOR_03 não existem ou estão setada como FALSE');
+    Memo1.Lines.Add('Diretiva VALOR_01, VALOR_02 E VALOR_03 não existem ou estão setada como FALSE');
   {$ENDIF}
 end;
 
@@ -266,11 +279,11 @@ const
   VERSAO = 6.8;
 begin
   {$IF VERSAO <= 5}
-    mmLog.Lines.Add('Valor da constante VERSAO é menor ou igual 5');
+    Memo1.Lines.Add('Valor da constante VERSAO é menor ou igual 5');
   {$ELSEIF (VERSAO > 5) AND (VERSAO <= 10)}
-    mmLog.Lines.Add('Valor da constante VERSAO é maior que 5 e menor que 10');
+    Memo1.Lines.Add('Valor da constante VERSAO é maior que 5 e menor que 10');
   {$ELSE}
-    mmLog.Lines.Add('Valor da constante VERSAO é maior que 10');
+    Memo1.Lines.Add('Valor da constante VERSAO é maior que 10');
   {$IFEND}
 end;
 
@@ -279,15 +292,15 @@ const
   TEST_INTEGER: Integer = 3;
 begin
   {$IF SizeOf(TEST_INTEGER) <= 5}
-  mmLog.Lines.Add('Valor da constante TEST_INTEGER é menor ou igual 5');
+  Memo1.Lines.Add('Valor da constante TEST_INTEGER é menor ou igual 5');
   {$ELSE}
-  mmLog.Lines.Add('Valor da constante TEST_INTEGER é maior que 5');
+  Memo1.Lines.Add('Valor da constante TEST_INTEGER é maior que 5');
   {$IFEND}
 end;
 
 procedure TViewMain.btnMessagesClick(Sender: TObject);
 begin
-  //AS MENSAGENS GERADAS SAO EXIBIDAS NAS ABAS "Build" E "Output"
+  //Gerando Messages ao compilar ou dar build no projeto (as mensagens geradas sao exibidas nas abas "Build" e "Output")
 
   //EMITS A HINT
   {$MESSAGE 'Meu Hint teste ao compilar'}
@@ -325,7 +338,7 @@ begin
     LSO := 'Não encontrada';
   {$ENDIF}
 
-  mmLog.Lines.Add('Sistema operacional selecionado: ' + LSO);
+  Memo1.Lines.Add('Sistema operacional selecionado: ' + LSO);
 end;
 
 procedure TViewMain.btnPlataformasClick(Sender: TObject);
@@ -356,7 +369,7 @@ begin
     LPlataforma := 'Não encontrada';
   {$ENDIF}
 
-  mmLog.Lines.Add('Plataforma atual: ' + LPlataforma);
+  Memo1.Lines.Add('Plataforma atual: ' + LPlataforma);
 end;
 
 procedure TViewMain.btnVclOuFmxClick(Sender: TObject);
@@ -380,7 +393,7 @@ begin
     LFramework := 'Não encontrado';
   {$ENDIF}
 
-  mmLog.Lines.Add('Plataforma atual: ' + LFramework);
+  Memo1.Lines.Add('Plataforma atual: ' + LFramework);
 end;
 
 procedure TViewMain.btnAlterarValorConstantesClick(Sender: TObject);
@@ -391,13 +404,13 @@ procedure TViewMain.btnAlterarValorConstantesClick(Sender: TObject);
 {$WRITEABLECONST ON}
 const
   MINHA_CONST: Integer = 2023;
-Begin
-  mmLog.Lines.Add('Valor da constante é: ' + MINHA_CONST.ToString);
+begin
+  Memo1.Lines.Add('Valor da constante é: ' + MINHA_CONST.ToString);
   MINHA_CONST := 2024;
-  mmLog.Lines.Add('Valor constante após alteração é: ' + MINHA_CONST.ToString);
+  Memo1.Lines.Add('Valor constante após alteração é: ' + MINHA_CONST.ToString);
 end;
 
-procedure TViewMain.btnAlterarValorConstantes2Click(Sender: TObject);
+procedure TViewMain.btnAoDefinirValorDeConstantesClick(Sender: TObject);
 const
   {$IFDEF DEBUG}
     DEBUG_OR_RELEASE = 'Debug';
@@ -405,7 +418,7 @@ const
     DEBUG_OR_RELEASE = 'Release';
   {$ENDIF}
 begin
-  mmLog.Lines.Add('A IDE esta em modo: ' + DEBUG_OR_RELEASE);
+  Memo1.Lines.Add('A IDE esta em modo: ' + DEBUG_OR_RELEASE);
 end;
 
 procedure TViewMain.btnVersaoDelphiVERXXClick(Sender: TObject);
@@ -430,7 +443,7 @@ begin
     LNomeVersao := 'Versão ANTERIOR a Delphi 10 Seattle ' + sLineBreak + 'Sua versão é a: ' + CompilerVersion.ToString;
   {$ENDIF}
 
-  mmLog.Lines.Add('A versão do seu Delphi é a: ' + LNomeVersao);
+  Memo1.Lines.Add('A versão do seu Delphi é a: ' + LNomeVersao);
 end;
 
 procedure TViewMain.btnVersaoDelphiCompilerVersionClick(Sender: TObject);
@@ -456,12 +469,12 @@ begin
   {$ELSE}
     LNomeVersao := 'Versão ANTERIOR a Delphi 10 Seattle';
   {$ENDIF}
-  mmLog.Lines.Add('A versão do seu Delphi é a: ' + LNomeVersao + ' - Número da CompilerVersion: ' + CompilerVersion.ToString);
+  Memo1.Lines.Add('A versão do seu Delphi é a: ' + LNomeVersao + ' - Número da CompilerVersion: ' + CompilerVersion.ToString);
 
   if(CompilerVersion = 33)then
-    mmLog.Lines.Add('Function CompilerVersion = 33. Versão do seu delphi é 10.3 Rio')
+    Memo1.Lines.Add('Function CompilerVersion = 33. Versão do seu delphi é 10.3 Rio')
   else
-    mmLog.Lines.Add('Function CompilerVersion = ' + CompilerVersion.ToString);
+    Memo1.Lines.Add('Function CompilerVersion = ' + CompilerVersion.ToString);
 end;
 
 procedure TViewMain.btnVersaoDelphiRTLVersionClick(Sender: TObject);
@@ -488,11 +501,12 @@ begin
     LNomeVersao := 'Versão ANTERIOR a Delphi 10 Seattle';
   {$ENDIF}
 
-  mmLog.Lines.Add('A versão do seu Delphi é a: ' + LNomeVersao + ' - Número da RTLVersion: ' + FloatToStr(RTLVersion));
+  Memo1.Lines.Add('A versão do seu Delphi é a: ' + LNomeVersao + ' - Número da RTLVersion: ' + FloatToStr(RTLVersion));
 end;
 
 procedure TViewMain.lbYoutubeClick(Sender: TObject);
 begin
   ShellExecute(0, nil, PChar(TLabel(Sender).Hint), '', '', SW_ShowNormal);
 end;
+
 end.

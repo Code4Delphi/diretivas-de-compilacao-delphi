@@ -1,0 +1,5 @@
+{$DEFINE DIRETIVA_TESTE}
+
+{$IF CompilerVersion < 35.0)}
+   {$DEFINE DIRETIVA_TESTE_35}
+{$ENDIF}
