@@ -6,7 +6,7 @@
   </a> 
 </p>
 
-Nesse diretório você encontrara vários exemplos do uso de diretivas de compilação com o **Delphi**.
+Nesse diretório você encontrara vários exemplos do uso de diretivas de compilação com o Delphi.
 
 Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exemplos completos e práticos de uso das diretivas.
 
@@ -455,3 +455,12 @@ To submit a pull request, follow these steps:
 4. Make the commit (`git commit -am 'Functionality or adjustment message'`)
 5. Push the branch (`git push origin Message about functionality or adjustment`)
 6. Open a pull request
+
+
+[Voltar para o Sumário](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#sum%C3%A1rio)
+
+[Voltar para o Sumário](?tab=readme-ov-file#sum%C3%A1rio)
+
+[Voltar para o Sumário](tab=readme-ov-file#sum%C3%A1rio)
+
+[Voltar para o Sumário](#sum%C3%A1rio)
