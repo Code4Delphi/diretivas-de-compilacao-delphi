@@ -53,6 +53,7 @@ Below we describe several examples of use, and in the project you will find comp
 - [WARNING MESSAGES](#warning-messages)
 - [REGION](#region)
 - [.inc FILES](#inc-files)
+- [USING THE IDE](#using-the-ide)
 - [USEFUL LINKS](#links-%C3%BAteis)
 - [CONTRIBUTIONS / IDEAS / BUG FIXES](#contributions--ideas--bug-fixes)
 
@@ -442,6 +443,12 @@ Examples:
 > {$DEFINE DIRECTIVE_TESTE_35}
 > {$ENDIF}
 > ```
+
+## USING THE IDE
+* You can define many of the compiler directives in the IDE dialog box under **Project > Options > Delphi Compiler > Conditional defines**. These directives affect all units whenever their source code is recompiled.
+
+* If you're working in the Code Editor and want a quick way to see the compiler directives in effect, press <kbd>**Ctrl + O + O**</kbd>. The current directive settings are entered on a horizontal line at the top of your file, along with other current settings such as compiler warnings (the $WARN directive settings). These lists are added to the beginning of your source file unless you manually undo (<kbd>__Ctrl + Z__</kbd>) or delete the list:
+![image](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/assets/33873267/d077a6e6-4135-426b-bf6b-7f22ef272026)
 
 ## 🔗USEFUL LINKS
 - [Delphi compilation directives](https://docwiki.embarcadero.com/RADStudio/Athens/en/Delphi_compiler_directives)
