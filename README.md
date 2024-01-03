@@ -50,7 +50,7 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 - [REGION](#region)
 - [ARQUIVOS .inc](#arquivos-inc)
 - [LINKS ÚTEIS](#links-%C3%BAteis)
-- [Contributions / Ideas / Bug Fixes](#contributions--ideas--bug-fixes)
+- [CONTRIBUTIONS / IDEAS / BUG FIXES](#contributions--ideas--bug-fixes)
 
 
 ## 🚀 DIRETIVAS
