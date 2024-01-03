@@ -461,6 +461,8 @@ To submit a pull request, follow these steps:
 
 [Voltar para o Sumário](?tab=readme-ov-file#sum%C3%A1rio)
 
-[Voltar para o Sumário](tab=readme-ov-file#sum%C3%A1rio)
-
 [Voltar para o Sumário](#sum%C3%A1rio)
+
+[Hints](#hints)
+
+[Constantes](#constantes)
