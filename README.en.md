@@ -40,13 +40,13 @@ Below we describe several examples of use, and in the project you will find comp
 
 ## Summary
 - [SET/UNDEFINE DIRECTIVES](#defineindefine)
-- [IF, ELSEIF AND ELSE CONDITIONS](#condi%C3%A7%C3%B5es-if-elseif-e-else)
+- [IF, ELSEIF AND ELSE CONDITIONS](#if-elseif-and-else-conditions)
 - [CONSTANTS](#constants)
 - [MESSAGES](#messages)
 - [OPERATING SYSTEMS](#operating-systems)
 - [PLATFORMS](#platforms)
 - [FRAMEWORK](#framework)
-- [DELPHI VERSION](#vers%C3%A3o-do-delphi)
+- [DELPHI VERSION](#delphi-version)
 - [SCOPEDENUMS](#scopedenums)
 - [HINTS](#hints)
 - [WARNINGS](#warnings)
