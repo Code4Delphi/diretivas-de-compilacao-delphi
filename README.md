@@ -35,7 +35,7 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 
 <br/>
 
-## Conteúdo 
+## Sumário 
 - [DEFINIR/INDEFINIR DIRETIVAS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#definirindefinir)
 - [CONDIÇÕES IF, ELSEIF E ELSE](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#condi%C3%A7%C3%B5es-if-elseif-e-else)
 - [CONSTANTES](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#constantes)
