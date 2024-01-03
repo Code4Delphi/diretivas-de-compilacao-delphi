@@ -50,6 +50,7 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 - [REGION](#region)
 - [ARQUIVOS .inc](#arquivos-inc)
 - [LINKS ÚTEIS](#links-%C3%BAteis)
+- [Contributions / Ideas / Bug Fixes](#contributions--ideas--bug-fixes)
 
 
 ## 🚀 DIRETIVAS
@@ -438,14 +439,14 @@ Exemplos:
 > {$ENDIF}
 > ```
 
-## 🔗 LINKS ÚTEIS
+## 🔗LINKS ÚTEIS
 - [Diretivas de compilação Delphi](https://docwiki.embarcadero.com/RADStudio/Athens/en/Delphi_compiler_directives)
 - [Lista de diretivas de compilação](https://docwiki.embarcadero.com/RADStudio/Athens/en/Delphi_Compiler_Directives_(List)_Index)
 - [Conditional compilation](https://docwiki.embarcadero.com/RADStudio/Athens/en/Conditional_compilation_(Delphi))
 - [Lista de Compiler Versions](https://docwiki.embarcadero.com/RADStudio/Athens/en/Compiler_Versions)
 - [Lista de Warning Messages](https://docwiki.embarcadero.com/RADStudio/Athens/en/Warning_messages_(Delphi))
 ‌
-## 💬 Contributions / Ideas / Bug Fixes
+## 💬Contributions / Ideas / Bug Fixes
 To submit a pull request, follow these steps:
 
 1. Fork the project
