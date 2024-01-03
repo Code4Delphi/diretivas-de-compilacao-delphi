@@ -456,6 +456,6 @@ To submit a pull request, follow these steps:
 5. Push the branch (`git push origin Message about functionality or adjustment`)
 6. Open a pull request
 
-[Voltar para o Topo](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi)
+[Voltar para o Topo](#diretivas-de-compila%C3%A7%C3%A3o-no-delphi)
 
 [Voltar para o Sumário](#sum%C3%A1rio)
