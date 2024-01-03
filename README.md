@@ -35,22 +35,22 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 
 <br/>
 
-## Conteúdo
-- [DEFINIR/INDEFINIR DIRETIVAS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#definirindefinir)
-- [CONDIÇÕES IF, ELSEIF E ELSE](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#condi%C3%A7%C3%B5es-if-elseif-e-else)
-- [CONSTANTES](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#constantes)
-- [MESSAGES](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#messages)
-- [SISTEMAS OPERACIONAIS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#sistemas-operacionais)
-- [PLATAFORMAS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#plataformas)
-- [FRAMEWORK](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#framework)
-- [VERSÃO DO DELPHI](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#vers%C3%A3o-do-delphi)
-- [SCOPEDENUMS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#scopedenums)
-- [HINTS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#hints)
-- [WARNINGS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#warnings)
-- [WARNING MESSAGES](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#warning-messages)
-- [REGION](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#region)
-- [ARQUIVOS .inc](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#arquivos-inc)
-- [LINKS ÚTEIS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/tree/master#links-%C3%BAteis)
+## Conteúdo 
+- [DEFINIR/INDEFINIR DIRETIVAS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#definirindefinir)
+- [CONDIÇÕES IF, ELSEIF E ELSE](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#condi%C3%A7%C3%B5es-if-elseif-e-else)
+- [CONSTANTES](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#constantes)
+- [MESSAGES](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#messages)
+- [SISTEMAS OPERACIONAIS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#sistemas-operacionais)
+- [PLATAFORMAS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#plataformas)
+- [FRAMEWORK](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#framework)
+- [VERSÃO DO DELPHI](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#vers%C3%A3o-do-delphi)
+- [SCOPEDENUMS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#scopedenums)
+- [HINTS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#hints)
+- [WARNINGS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#warnings)
+- [WARNING MESSAGES](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#warning-messages)
+- [REGION](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#region)
+- [ARQUIVOS .inc](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#arquivos-inc)
+- [LINKS ÚTEIS](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi?tab=readme-ov-file#links-%C3%BAteis)
 
 
 ## 🚀 DIRETIVAS
