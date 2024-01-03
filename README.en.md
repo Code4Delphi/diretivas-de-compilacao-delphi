@@ -457,4 +457,4 @@ To submit a pull request, follow these steps:
 6. Open a pull request
 
 
-[Back to Top](#compile-directives%C3%A7%C3%A3o-no-delphi) &nbsp;&nbsp; &nbsp;&nbsp; [Return to Summary](#sum%C3%A1rio)
+[Back to Top](#compilation-directives-in-delphi) &nbsp;&nbsp; &nbsp;&nbsp; [Return to Summary](#summary)
