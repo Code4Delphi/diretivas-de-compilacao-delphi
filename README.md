@@ -40,6 +40,7 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 
 
 ## Sumário 
+- [O QUE SÃO DIRETIVAS DE COMPILAÇÃO](#o-que-s%C3%A3o-diretivas-de-compila%C3%A7%C3%A3o)
 - [DEFINIR/INDEFINIR DIRETIVAS](#definirindefinir)
 - [CONDIÇÕES IF, ELSEIF E ELSE](#condi%C3%A7%C3%B5es-if-elseif-e-else)
 - [CONSTANTES](#constantes)
