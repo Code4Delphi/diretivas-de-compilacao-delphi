@@ -63,7 +63,8 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 ## 🚀 DIRETIVAS
 
 ## O QUE SÃO DIRETIVAS DE COMPILAÇÃO
-* Uma diretiva de compilador é um comentário com uma sintaxe especial. A diretiva do compilador começa com um $ (sinal de dólar) como o primeiro caractere após o delimitador de comentário de abertura, imediatamente seguido por um nome (uma ou mais letras) que designa a diretiva específica. Você pode incluir comentários após a diretiva e quaisquer parâmetros necessários.
+Uma diretiva de compilador é um comentário com uma sintaxe especial. A diretiva do compilador começa com um $ (sinal de dólar) como o primeiro caractere após o delimitador de comentário de abertura, imediatamente seguido por um nome (uma ou mais letras) que designa a diretiva específica. Você pode incluir comentários após a diretiva e quaisquer parâmetros necessários.
+  
 As diretivas do compilador podem ser colocadas onde quer que os comentários sejam permitidos. 
 Exemplos de diretivas:
 ```
