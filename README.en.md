@@ -60,6 +60,16 @@ Below we describe several examples of use, and in the project you will find comp
 
 ## 🚀 DIRECTIVES
 
+## WHAT ARE COMPILATION DIRECTIVES
+A compiler directive is a comment with a special syntax. The compiler directive starts with a $ (dollar-sign) as the first character after the opening comment delimiter, immediately followed by a name (one or more letters) that designates the particular directive. You can include comments after the directive and any necessary parameters.
+  
+Compiler directives can be placed wherever comments are allowed. 
+Examples of directives:
+```
+{$hints off}  
+(*$hints off*)
+```
+
 ## DEFINE/UNDEFINE
 * CREATE/SET A POLICY
 ```
