@@ -39,6 +39,7 @@ Below we describe several examples of use, and in the project you will find comp
 
 
 ## Summary
+- [WHAT ARE COMPILATION DIRECTIVES](#what-are-compilation-directives)
 - [SET/UNDEFINE DIRECTIVES](#defineindefine)
 - [IF, ELSEIF AND ELSE CONDITIONS](#if-elseif-and-else-conditions)
 - [CONSTANTS](#constants)
