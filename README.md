@@ -65,7 +65,7 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 ## O QUE SÃO DIRETIVAS DE COMPILAÇÃO
 Uma diretiva de compilação é um comentário com uma sintaxe especial. A diretiva de compilação começa com um $ (sinal de dólar) como o primeiro caractere após o delimitador de comentário de abertura, imediatamente seguido por um nome (uma ou mais letras) que designa a diretiva específica. Você pode incluir comentários após a diretiva e quaisquer parâmetros necessários.
   
-As diretivas do compilador podem ser colocadas onde quer que os comentários sejam permitidos. 
+As diretivas de compilação podem ser colocadas onde quer que os comentários sejam permitidos. 
 Exemplos de diretivas:
 ```
 {$hints off}  
@@ -458,9 +458,9 @@ Exemplos:
 
 
 ## USANDO O IDE
-* Você pode definir muitas das diretivas do compilador na caixa de diálogo da IDE em **Project > Options > Delphi Compiler > Conditional defines**. Essas diretivas afetam todas as unidades sempre que seu código-fonte é recompilado.
+* Você pode definir muitas das diretivas de compilação na caixa de diálogo da IDE em **Project > Options > Delphi Compiler > Conditional defines**. Essas diretivas afetam todas as unidades sempre que seu código-fonte é recompilado.
 
-* Se você estiver trabalhando no Editor de Código e quiser uma maneira rápida de ver as diretivas do compilador em vigor, pressione <kbd>**Ctrl + O + O**</kbd>. As configurações atuais das diretivas são inseridas em uma linha horizontal no topo do seu arquivo, junto com outras configurações atuais, como avisos do compilador (as configurações da diretiva $WARN). Essas listas são adicionadas ao início do seu arquivo de origem, a menos que você desfaça (<kbd>__Ctrl + Z__</kbd>) ou exclua manualmente a lista:
+* Se você estiver trabalhando no Editor de Código e quiser uma maneira rápida de ver as diretivas de compilação em vigor, pressione <kbd>**Ctrl + O + O**</kbd>. As configurações atuais das diretivas são inseridas em uma linha horizontal no topo do seu arquivo, junto com outras configurações atuais, como avisos do compilador (as configurações da diretiva $WARN). Essas listas são adicionadas ao início do seu arquivo de origem, a menos que você desfaça (<kbd>__Ctrl + Z__</kbd>) ou exclua manualmente a lista:
 ![image](https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/assets/33873267/d077a6e6-4135-426b-bf6b-7f22ef272026)
 
 
