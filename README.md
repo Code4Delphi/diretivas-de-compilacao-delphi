@@ -34,7 +34,7 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 <br/>
 
 > [!IMPORTANT]
-> ## ⭐ Não se esqueça de deixar sua estrela para ajudar a propagar o repositório.
+> ### ⭐ Não se esqueça de deixar sua estrela para ajudar a propagar o repositório.
 
 
 ## Sumário 
