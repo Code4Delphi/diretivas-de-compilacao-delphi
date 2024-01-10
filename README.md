@@ -6,9 +6,9 @@
 # Diretivas de compilação no **Delphi**
 
 <p align="center">
-  <a href="https://github.com/Code4Delphi/Code4D-Wizard/blob/master/Images/C4D-Logo.png">    
+  <a href="https://github.com/Code4Delphi/Code4D-Wizard/blob/master/Images/C4D-Logo.png">
     <img alt="Code4Delphi" height="100" src="https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/assets/33873267/7191065f-96f6-46ed-aae4-4c4d3027b717">
-  </a> 
+  </a>
 </p>
 
 Nesse diretório você encontrara vários exemplos do uso de diretivas de compilação com o Delphi.
@@ -470,6 +470,7 @@ Exemplos:
 - [Conditional compilation](https://docwiki.embarcadero.com/RADStudio/Athens/en/Conditional_compilation_(Delphi))
 - [Lista de Compiler Versions](https://docwiki.embarcadero.com/RADStudio/Athens/en/Compiler_Versions)
 - [Lista de Warning Messages](https://docwiki.embarcadero.com/RADStudio/Athens/en/Warning_messages_(Delphi))
+- <a href="https://docwiki.embarcadero.com/RADStudio/Athens/en/Warning_messages_(Delphi)"> Lista de Warning Messages </a>
 ‌
 ## 💬Contributions / Ideas / Bug Fixes
 To submit a pull request, follow these steps:
