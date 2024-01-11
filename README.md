@@ -95,13 +95,22 @@ Exemplos de diretivas:
 ~~~delphi
   {$DEFINE VALOR_02}
   {$IFDEF VALOR_01}
-    Memo1.Lines.Add('Diretiva VALOR_01 setada como TRUE');
+    Memo1.Lines.Add('Diretiva VALOR_01 definida');
   {$ELSEIF DEFINED(VALOR_02)}
-    Memo1.Lines.Add('Diretiva VALOR_02 setada como TRUE');
+    Memo1.Lines.Add('Diretiva VALOR_02 definida');
   {$ELSEIF DEFINED(VALOR_03)}
-    Memo1.Lines.Add('Diretiva VALOR_03 setada como TRUE');
+    Memo1.Lines.Add('Diretiva VALOR_03 definida');
   {$ELSE}
-    Memo1.Lines.Add('Diretiva VALOR_01, VALOR_02 E VALOR_03 não existem ou estão setada como FALSE');
+    Memo1.Lines.Add('Diretivas VALOR_01, VALOR_02 E VALOR_03 não estão definidas');
+  {$ENDIF}
+~~~
+
+* IF com NOT
+~~~delphi
+  {$IF NOT DEFINED(DIRETIVA_NOT)}
+    Memo1.Lines.Add('Diretiva DIRETIVA_NOT não definida');
+  {$ELSE}
+    Memo1.Lines.Add('Diretiva DIRETIVA_NOT definida');
   {$ENDIF}
 ~~~
 
