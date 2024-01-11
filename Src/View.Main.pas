@@ -88,6 +88,7 @@ type
     btnNumeroPorExtenso: TButton;
     btnMessages: TButton;
     btnIfComNot: TButton;
+    btnIdeEmDebugOuRelease: TButton;
     procedure btnNumeroPorExtensoClick(Sender: TObject);
     procedure btnIFeELSEClick(Sender: TObject);
     procedure btnIFeELSEIFeELSEClick(Sender: TObject);
@@ -110,6 +111,7 @@ type
     procedure btnPlataformasClick(Sender: TObject);
     procedure btnVclOuFmxClick(Sender: TObject);
     procedure btnIfComNotClick(Sender: TObject);
+    procedure btnIdeEmDebugOuReleaseClick(Sender: TObject);
   private
     {$IFDEF ACBR_C4D}
     function NumeroExtensoACBr(AValor: Double): string;
@@ -271,7 +273,7 @@ begin
   {$ELSEIF DEFINED(VALOR_03)}
     Memo1.Lines.Add('Diretiva VALOR_03 definida');
   {$ELSE}
-    Memo1.Lines.Add('Diretivas VALOR_01, VALOR_02 E VALOR_03 não estão definida');
+    Memo1.Lines.Add('Diretivas VALOR_01, VALOR_02 E VALOR_03 não estão definidas');
   {$ENDIF}
 end;
 
@@ -306,6 +308,17 @@ begin
   {$ELSE}
   Memo1.Lines.Add('Valor da constante TEST_INTEGER é maior que 5');
   {$IFEND}
+end;
+
+procedure TViewMain.btnIdeEmDebugOuReleaseClick(Sender: TObject);
+begin
+  {$IFDEF DEBUG}
+    Memo1.Lines.Add('Modo de Debug');
+  {$ELSEIF DEFINED(RELEASE)}
+    Memo1.Lines.Add('Modo de Release');
+  {$ELSE}
+    Memo1.Lines.Add('Modo diferente de Debug e Release');
+  {$ENDIF}
 end;
 
 procedure TViewMain.btnMessagesClick(Sender: TObject);
