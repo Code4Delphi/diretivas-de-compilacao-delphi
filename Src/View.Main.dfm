@@ -33,8 +33,6 @@ object ViewMain: TViewMain
     ReadOnly = True
     ScrollBars = ssVertical
     TabOrder = 0
-    ExplicitTop = 121
-    ExplicitHeight = 358
   end
   object Panel6: TPanel
     Left = 0
@@ -77,7 +75,7 @@ object ViewMain: TViewMain
         Width = 451
         Height = 121
         Align = alClient
-        Caption = ' Links '#250'teis '
+        Caption = ' Links '#250'teis / materiais utilizados como refer'#234'ncias '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -11
@@ -632,7 +630,6 @@ object ViewMain: TViewMain
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitWidth = 926
       object btnIFeELSE: TButton
         Left = 0
         Top = 0
@@ -687,7 +684,6 @@ object ViewMain: TViewMain
         Caption = 'Messages'
         TabOrder = 4
         OnClick = btnMessagesClick
-        ExplicitLeft = 655
       end
     end
     object Panel4: TPanel
@@ -698,7 +694,6 @@ object ViewMain: TViewMain
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitWidth = 926
       object btnAlterarValorConstantes: TButton
         Left = 0
         Top = 0
@@ -720,7 +715,6 @@ object ViewMain: TViewMain
         Caption = 'Ao definir um valor de constante'
         TabOrder = 1
         OnClick = btnAoDefinirValorDeConstantesClick
-        ExplicitLeft = 160
       end
       object btnVersaoDelphiVERXX: TButton
         Left = 330
@@ -754,8 +748,6 @@ object ViewMain: TViewMain
         Caption = 'Vers'#227'o Delphi (CompilerVersion)'
         TabOrder = 3
         OnClick = btnVersaoDelphiCompilerVersionClick
-        ExplicitLeft = 489
-        ExplicitTop = -6
       end
     end
     object Panel5: TPanel
@@ -767,7 +759,6 @@ object ViewMain: TViewMain
       BevelOuter = bvNone
       ParentBackground = False
       TabOrder = 3
-      ExplicitWidth = 926
       object btnDefine: TButton
         Left = 0
         Top = 0
@@ -822,7 +813,6 @@ object ViewMain: TViewMain
         Caption = 'Warning messages'
         TabOrder = 4
         OnClick = Button1Click
-        ExplicitLeft = 655
       end
     end
     object Panel8: TPanel
@@ -834,7 +824,6 @@ object ViewMain: TViewMain
       BevelOuter = bvNone
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 48
       object btnSO: TButton
         Left = 0
         Top = 0

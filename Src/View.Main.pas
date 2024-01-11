@@ -240,11 +240,10 @@ begin
   //LISTA COMPLETA: https://docwiki.embarcadero.com/RADStudio/Athens/en/Warning_messages_(Delphi)
 end;
 
-
 procedure TViewMain.btnIFeELSEClick(Sender: TObject);
 begin
   //CRIAR/DEFINIR A DIRETIVA "MINHA_DIRETIVA"
-  {$DEFINE MINHA_DIRETIVA}
+  (*$DEFINE MINHA_DIRETIVA*)
   {$IFDEF MINHA_DIRETIVA}
     Memo1.Lines.Add('Diretiva MINHA_DIRETIVA setada como TRUE');
   {$ELSE}
