@@ -223,6 +223,22 @@ begin
 end;
 ~~~
 
+
+## Debug ou Release
+* Verificar se IDE está em Debug ou Release
+~~~delphi
+procedure TViewMain.btnIdeEmDebugOuReleaseClick(Sender: TObject);
+begin
+  {$IFDEF DEBUG}
+    Memo1.Lines.Add('Modo de Debug');
+  {$ELSEIF DEFINED(RELEASE)}
+    Memo1.Lines.Add('Modo de Release');
+  {$ELSE}
+    Memo1.Lines.Add('Modo diferente de Debug e Release');
+  {$ENDIF}
+end;
+~~~
+
 ## PLATAFORMAS
 * Verificar qual a Plataforma
 ~~~delphi
