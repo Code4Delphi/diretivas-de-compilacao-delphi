@@ -662,7 +662,6 @@ object ViewMain: TViewMain
         Caption = 'Com constantes'
         TabOrder = 3
         OnClick = btnComContantesClick
-        ExplicitLeft = 330
       end
       object btnComContantesInteger: TButton
         Left = 660
@@ -674,7 +673,6 @@ object ViewMain: TViewMain
         Caption = 'Com constante Integer'
         TabOrder = 4
         OnClick = btnComContantesIntegerClick
-        ExplicitLeft = 495
       end
       object btnIfComNot: TButton
         Left = 330
@@ -686,8 +684,6 @@ object ViewMain: TViewMain
         Caption = 'IF com NOT'
         TabOrder = 2
         OnClick = btnIfComNotClick
-        ExplicitLeft = 404
-        ExplicitTop = -6
       end
     end
     object Panel4: TPanel
@@ -828,8 +824,9 @@ object ViewMain: TViewMain
       BevelOuter = bvNone
       ParentBackground = False
       TabOrder = 1
+      ExplicitTop = 48
       object btnSO: TButton
-        Left = 165
+        Left = 330
         Top = 0
         Width = 165
         Height = 27
@@ -838,10 +835,10 @@ object ViewMain: TViewMain
         Caption = 'Sistema operacional'
         TabOrder = 1
         OnClick = btnSOClick
-        ExplicitLeft = 0
+        ExplicitLeft = 165
       end
       object btnPlataformas: TButton
-        Left = 330
+        Left = 495
         Top = 0
         Width = 165
         Height = 27
@@ -850,10 +847,10 @@ object ViewMain: TViewMain
         Caption = 'Plataformas'
         TabOrder = 2
         OnClick = btnPlataformasClick
-        ExplicitLeft = 165
+        ExplicitLeft = 330
       end
       object btnVclOuFmx: TButton
-        Left = 495
+        Left = 660
         Top = 0
         Width = 165
         Height = 27
@@ -862,10 +859,10 @@ object ViewMain: TViewMain
         Caption = 'Framework (VCL ou FMX)'
         TabOrder = 3
         OnClick = btnVclOuFmxClick
-        ExplicitLeft = 330
+        ExplicitLeft = 495
       end
       object btnMessages: TButton
-        Left = 0
+        Left = 165
         Top = 0
         Width = 165
         Height = 27
@@ -874,8 +871,19 @@ object ViewMain: TViewMain
         Caption = 'Messages'
         TabOrder = 0
         OnClick = btnMessagesClick
-        ExplicitLeft = -25
-        ExplicitTop = -6
+        ExplicitLeft = 0
+      end
+      object btnIdeEmDebugOuRelease: TButton
+        Left = 0
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'IDE em Debug ou Release'
+        TabOrder = 4
+        OnClick = btnIdeEmDebugOuReleaseClick
+        ExplicitLeft = 8
       end
     end
     object Panel1: TPanel
