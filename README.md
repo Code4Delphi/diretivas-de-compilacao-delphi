@@ -43,6 +43,7 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 - [CONDIÇÕES IF, ELSEIF E ELSE](#condi%C3%A7%C3%B5es-if-elseif-e-else)
 - [CONSTANTES](#constantes)
 - [MESSAGES](#messages)
+- [DEBUG OU RELEASE](#debug-ou-release)
 - [SISTEMAS OPERACIONAIS](#sistemas-operacionais)
 - [PLATAFORMAS](#plataformas)
 - [FRAMEWORK](#framework)
@@ -224,7 +225,7 @@ end;
 ~~~
 
 
-## Debug ou Release
+## DEBUG OU RELEASE
 * Verificar se IDE está em Debug ou Release
 ~~~delphi
 procedure TViewMain.btnIdeEmDebugOuReleaseClick(Sender: TObject);
