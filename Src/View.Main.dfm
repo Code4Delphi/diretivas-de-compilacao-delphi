@@ -653,37 +653,41 @@ object ViewMain: TViewMain
         OnClick = btnIFeELSEIFeELSEClick
       end
       object btnComContantes: TButton
-        Left = 330
-        Top = 0
-        Width = 165
-        Height = 27
-        Cursor = crHandPoint
-        Align = alLeft
-        Caption = 'Com constantes'
-        TabOrder = 2
-        OnClick = btnComContantesClick
-      end
-      object btnComContantesInteger: TButton
         Left = 495
         Top = 0
         Width = 165
         Height = 27
         Cursor = crHandPoint
         Align = alLeft
-        Caption = 'Com constante Integer'
+        Caption = 'Com constantes'
         TabOrder = 3
-        OnClick = btnComContantesIntegerClick
+        OnClick = btnComContantesClick
+        ExplicitLeft = 330
       end
-      object btnMessages: TButton
+      object btnComContantesInteger: TButton
         Left = 660
         Top = 0
         Width = 165
         Height = 27
         Cursor = crHandPoint
         Align = alLeft
-        Caption = 'Messages'
+        Caption = 'Com constante Integer'
         TabOrder = 4
-        OnClick = btnMessagesClick
+        OnClick = btnComContantesIntegerClick
+        ExplicitLeft = 495
+      end
+      object btnIfComNot: TButton
+        Left = 330
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'IF com NOT'
+        TabOrder = 2
+        OnClick = btnIfComNotClick
+        ExplicitLeft = 404
+        ExplicitTop = -6
       end
     end
     object Panel4: TPanel
@@ -825,37 +829,53 @@ object ViewMain: TViewMain
       ParentBackground = False
       TabOrder = 1
       object btnSO: TButton
-        Left = 0
-        Top = 0
-        Width = 165
-        Height = 27
-        Cursor = crHandPoint
-        Align = alLeft
-        Caption = 'Sistema operacional'
-        TabOrder = 0
-        OnClick = btnSOClick
-      end
-      object btnPlataformas: TButton
         Left = 165
         Top = 0
         Width = 165
         Height = 27
         Cursor = crHandPoint
         Align = alLeft
-        Caption = 'Plataformas'
+        Caption = 'Sistema operacional'
         TabOrder = 1
-        OnClick = btnPlataformasClick
+        OnClick = btnSOClick
+        ExplicitLeft = 0
       end
-      object btnVclOuFmx: TButton
+      object btnPlataformas: TButton
         Left = 330
         Top = 0
         Width = 165
         Height = 27
         Cursor = crHandPoint
         Align = alLeft
-        Caption = 'Framework (VCL ou FMX)'
+        Caption = 'Plataformas'
         TabOrder = 2
+        OnClick = btnPlataformasClick
+        ExplicitLeft = 165
+      end
+      object btnVclOuFmx: TButton
+        Left = 495
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Framework (VCL ou FMX)'
+        TabOrder = 3
         OnClick = btnVclOuFmxClick
+        ExplicitLeft = 330
+      end
+      object btnMessages: TButton
+        Left = 0
+        Top = 0
+        Width = 165
+        Height = 27
+        Cursor = crHandPoint
+        Align = alLeft
+        Caption = 'Messages'
+        TabOrder = 0
+        OnClick = btnMessagesClick
+        ExplicitLeft = -25
+        ExplicitTop = -6
       end
     end
     object Panel1: TPanel

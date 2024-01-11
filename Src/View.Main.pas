@@ -67,7 +67,6 @@ type
     btnIFeELSEIFeELSE: TButton;
     btnComContantes: TButton;
     btnComContantesInteger: TButton;
-    btnMessages: TButton;
     Panel4: TPanel;
     btnAlterarValorConstantes: TButton;
     btnAoDefinirValorDeConstantes: TButton;
@@ -87,6 +86,8 @@ type
     Panel1: TPanel;
     edtValor: TEdit;
     btnNumeroPorExtenso: TButton;
+    btnMessages: TButton;
+    btnIfComNot: TButton;
     procedure btnNumeroPorExtensoClick(Sender: TObject);
     procedure btnIFeELSEClick(Sender: TObject);
     procedure btnIFeELSEIFeELSEClick(Sender: TObject);
@@ -108,6 +109,7 @@ type
     procedure btnSOClick(Sender: TObject);
     procedure btnPlataformasClick(Sender: TObject);
     procedure btnVclOuFmxClick(Sender: TObject);
+    procedure btnIfComNotClick(Sender: TObject);
   private
     {$IFDEF ACBR_C4D}
     function NumeroExtensoACBr(AValor: Double): string;
@@ -245,17 +247,17 @@ begin
   //CRIAR/DEFINIR A DIRETIVA "MINHA_DIRETIVA"
   (*$DEFINE MINHA_DIRETIVA*)
   {$IFDEF MINHA_DIRETIVA}
-    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA setada como TRUE');
+    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA definida');
   {$ELSE}
-    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA setada como FALSE');
+    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA não definida');
   {$ENDIF}
 
   //DESATIVAR/INDEFINIR A DIRETIVA "MINHA_DIRETIVA"
   {$UNDEF MINHA_DIRETIVA}
   {$IFDEF MINHA_DIRETIVA}
-    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA setada como TRUE');
+    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA definida');
   {$ELSE}
-    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA setada como FALSE');
+    Memo1.Lines.Add('Diretiva MINHA_DIRETIVA não definida');
   {$ENDIF}
 end;
 
@@ -263,13 +265,22 @@ procedure TViewMain.btnIFeELSEIFeELSEClick(Sender: TObject);
 begin
   {$DEFINE VALOR_02}
   {$IFDEF VALOR_01}
-    Memo1.Lines.Add('Diretiva VALOR_01 setada como TRUE');
+    Memo1.Lines.Add('Diretiva VALOR_01 definida');
   {$ELSEIF DEFINED(VALOR_02)}
-    Memo1.Lines.Add('Diretiva VALOR_02 setada como TRUE');
+    Memo1.Lines.Add('Diretiva VALOR_02 definida');
   {$ELSEIF DEFINED(VALOR_03)}
-    Memo1.Lines.Add('Diretiva VALOR_03 setada como TRUE');
+    Memo1.Lines.Add('Diretiva VALOR_03 definida');
   {$ELSE}
-    Memo1.Lines.Add('Diretiva VALOR_01, VALOR_02 E VALOR_03 não existem ou estão setada como FALSE');
+    Memo1.Lines.Add('Diretivas VALOR_01, VALOR_02 E VALOR_03 não estão definida');
+  {$ENDIF}
+end;
+
+procedure TViewMain.btnIfComNotClick(Sender: TObject);
+begin
+  {$IF NOT DEFINED(DIRETIVA_NOT)}
+    Memo1.Lines.Add('Diretiva DIRETIVA_NOT não definida');
+  {$ELSE}
+    Memo1.Lines.Add('Diretiva DIRETIVA_NOT definida');
   {$ENDIF}
 end;
 
