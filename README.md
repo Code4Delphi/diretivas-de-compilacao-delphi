@@ -20,15 +20,19 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 <p align="left">
   <a href="https://t.me/Code4Delphi" target="_blank">
     <img src="https://img.shields.io/badge/Telegram:-Join%20Channel-blue?logo=telegram">
-  </a>
-  &nbsp;
+  </a>   
+   &nbsp;
   <a href="https://www.youtube.com/@code4delphi" target="_blank">
     <img src="https://img.shields.io/badge/YouTube:-Join%20Channel-red?logo=youtube&logoColor=red">
+  </a> 
+   &nbsp;
+  <a href="https://www.linkedin.com/in/cesar-cardoso-dev" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn:-Follow-blue?logo=LinkedIn&logoColor=blue">
   </a> 
   &nbsp;
   <a href="mailto:contato@code4delphi.com.br" target="_blank">
     <img src="https://img.shields.io/badge/E--mail-contato%40code4delphi.com.br-yellowgreen?logo=maildotru&logoColor=yellowgreen">
-  </a>  
+  </a>
 </p>
 
 <br/>
