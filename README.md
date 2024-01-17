@@ -452,6 +452,16 @@ Exemplos:
 ```
 Lista completa: [https://docwiki.embarcadero.com/RADStudio/Athens/en/Warning_messages_(Delphi)](https://docwiki.embarcadero.com/RADStudio/Athens/en/Warning_messages_(Delphi))
 
+> [!TIP]
+> A partir da versão 10.3 do Delphi, se você usar um custom attribute que não for conhecido pelo compilador (porque você o digitou incorretamente ou uma unidade estiver faltando na instrução uses), você irá receber um Warning:
+> ```
+> Warning: W1074 Unknown custom attribute
+> ```
+> É recomendado transformar esse Warning em um erro, para que seja obrigatório a correção, para isso insira:
+> ```
+> {$WARN UNKNOWN_CUSTOM_ATTRIBUTE ERROR}
+> ```
+
 ## REGION
 * Controla a exibição de regiões recolhíveis
 ~~~delphi
