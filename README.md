@@ -9,7 +9,7 @@
   <img alt="Code4Delphi" height="100" src="https://github.com/Code4Delphi/diretivas-de-compilacao-delphi/assets/33873267/7191065f-96f6-46ed-aae4-4c4d3027b717">
 </p>
 
-Nesse repositório você encontrara vários exemplos do uso de diretivas de compilação com o Delphi.
+Nesse repositório/artigo você encontrara vários exemplos do uso de diretivas de compilação com o Delphi.
 
 Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exemplos completos e práticos de uso das diretivas.
 
