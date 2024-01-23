@@ -10,7 +10,7 @@
    </a>
 </p>
 
-In this directory you will find several examples of using compilation directives with Delphi.
+In this repository/post you will find several examples of using compilation directives with Delphi.
 
 Below we describe several examples of use, and in the project you will find complete and practical examples of use of the directives.
 
