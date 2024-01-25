@@ -516,7 +516,7 @@ To submit a pull request, follow these steps:
 
 
 > [!IMPORTANT]
-> ### ⭐ Não se esqueça de deixar sua estrela para ajudar a propagar o repositório.
+> ⭐ Não se esqueça de deixar sua **estrela** para ajudar a propagar o repositório.
 
 
 [Voltar para o Topo](#diretivas-de-compila%C3%A7%C3%A3o-no-delphi) &nbsp;&nbsp; &nbsp;&nbsp;  [Voltar para o Sumário](#sum%C3%A1rio)
