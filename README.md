@@ -503,17 +503,6 @@ Exemplos:
 - [Conditional compilation](https://docwiki.embarcadero.com/RADStudio/Athens/en/Conditional_compilation_(Delphi))
 - [Lista de Compiler Versions](https://docwiki.embarcadero.com/RADStudio/Athens/en/Compiler_Versions)
 - <a  target="_blank" href="https://docwiki.embarcadero.com/RADStudio/Athens/en/Warning_messages_(Delphi)"> Lista de Warning Messages </a>
-‌
-## 💬Contributions / Ideas / Bug Fixes
-To submit a pull request, follow these steps:
-
-1. Fork the project
-2. Create a new branch (`git checkout -b minha-nova-funcionalidade`)
-3. Make your changes
-4. Make the commit (`git commit -am 'Functionality or adjustment message'`)
-5. Push the branch (`git push origin Message about functionality or adjustment`)
-6. Open a pull request
-
 
 > [!IMPORTANT]
 > ⭐ Não se esqueça de deixar sua **estrela** para ajudar a propagar o repositório.
