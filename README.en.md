@@ -38,10 +38,6 @@ Below we describe several examples of use, and in the project you will find comp
 
 <br/>
 
-> [!IMPORTANT]
-> ## ⭐ Don't forget to leave your star to help propagate the directory.
-
-
 ## Summary
 - [WHAT ARE COMPILATION DIRECTIVES](#what-are-compilation-directives)
 - [SET/UNDEFINE DIRECTIVES](#defineindefine)
@@ -492,5 +488,7 @@ To submit a pull request, follow these steps:
 5. Push the branch (`git push origin Message about functionality or adjustment`)
 6. Open a pull request
 
+> [!IMPORTANT]
+> ⭐ Don't forget to leave your **star** to help propagate the directory.
 
 [Back to Top](#compilation-directives-in-delphi) &nbsp;&nbsp; &nbsp;&nbsp; [Return to Summary](#summary)
