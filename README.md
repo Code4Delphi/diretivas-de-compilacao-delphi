@@ -37,9 +37,6 @@ Abaixo descrevemos diversos exemplo de uso, e no projeto você encontrara exempl
 
 <br/>
 
-> [!IMPORTANT]
-> ### ⭐ Não se esqueça de deixar sua estrela para ajudar a propagar o repositório.
-
 
 ## Sumário 
 - [O QUE SÃO DIRETIVAS DE COMPILAÇÃO](#o-que-s%C3%A3o-diretivas-de-compila%C3%A7%C3%A3o)
@@ -519,5 +516,7 @@ To submit a pull request, follow these steps:
 5. Push the branch (`git push origin Message about functionality or adjustment`)
 6. Open a pull request
 
+> [!IMPORTANT]
+> ### ⭐ Não se esqueça de deixar sua estrela para ajudar a propagar o repositório.
 
 [Voltar para o Topo](#diretivas-de-compila%C3%A7%C3%A3o-no-delphi) &nbsp;&nbsp; &nbsp;&nbsp;  [Voltar para o Sumário](#sum%C3%A1rio)
