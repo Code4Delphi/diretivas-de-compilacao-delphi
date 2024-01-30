@@ -38,6 +38,11 @@ Below we describe several examples of use, and in the project you will find comp
 
 <br/>
 
+## ▶️ Demo video
+* [Access demo video](https://www.youtube.com/watch?v=ZoKMIpF2lG0&list=PLLHSz4dOnnN1Hx0KtSwqN1Ory9HP7IDJn&index=2)
+
+<br/>
+
 ## Summary
 - [WHAT ARE COMPILATION DIRECTIVES](#what-are-compilation-directives)
 - [SET/UNDEFINE DIRECTIVES](#defineindefine)
